@@ -1,0 +1,322 @@
+@font-face {
+  font-family: 'Maven Pro';
+  src: url("../fonts/MavenPro-Black.woff2") format("woff2"), url("../fonts/MavenPro-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Maven Pro';
+  src: url("../fonts/MavenPro-Regular.woff2") format("woff2"), url("../fonts/MavenPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Maven Pro';
+  src: url("../fonts/MavenPro-Bold.woff2") format("woff2"), url("../fonts/MavenPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Maven Pro';
+  src: url("../fonts/MavenPro-SemiBold.woff2") format("woff2"), url("../fonts/MavenPro-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Maven Pro';
+  src: url("../fonts/MavenPro-ExtraBold.woff2") format("woff2"), url("../fonts/MavenPro-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Maven Pro';
+  src: url("../fonts/MavenPro-Medium.woff2") format("woff2"), url("../fonts/MavenPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Maven Pro;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100vh;
+  color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background: url(../img/main-bg.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 600px;
+}
+.main-text {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main-text h1 {
+  font-size: 86px;
+  margin: 1.5rem;
+}
+.main-text span {
+  display: inline-block;
+}
+.main-text span::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: #fff;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.main-text span::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 1px;
+  margin-right: 20px;
+  vertical-align: middle;
+  background-color: #fff;
+  margin-right: 10px;
+}
+.main-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(150deg, #88d3ce 0%, #6e45e2 100%);
+  opacity: 0.8;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  font-size: 1.5rem;
+  font-family: Maven Pro;
+  position: relative;
+  height: 10vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+.menu {
+  width: 70%;
+}
+.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+.menu-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.get-started-btn {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  border-radius: 100px;
+  text-transform: uppercase;
+  margin-left: 60px;
+}
+
+.main-arrow {
+  height: 15vh;
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.arrow-down {
+  width: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 18.69px 2.31px rgba(204, 204, 223, 0.5);
+          box-shadow: 0px 0px 18.69px 2.31px rgba(204, 204, 223, 0.5);
+}
+
+.table {
+  background-color: #f9fafc;
+  text-align: center;
+  padding: 6rem;
+  font-family: Maven Pro;
+}
+.table-header {
+  margin-bottom: 5rem;
+}
+.table-header p {
+  width: 40rem;
+  display: inline-block;
+  line-height: 1.4rem;
+  font-size: 1.8rem;
+  color: #cccfd5;
+}
+.table-header h2 {
+  color: #4f4f6f;
+  font-size: 6rem;
+}
+.table-header span {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #9fa4af;
+}
+.table-header span::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 1px;
+  margin-right: 20px;
+  vertical-align: middle;
+  background-color: #6e45e2;
+  margin-right: 10px;
+}
+.table-header span::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 1px;
+  margin-right: 20px;
+  vertical-align: middle;
+  background-color: #6e45e2;
+  margin-left: 10px;
+}
+
+.price-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price-tag {
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 2rem;
+  width: 35rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.price-tag p {
+  color: #9fa4af;
+  font-size: 2rem;
+}
+.price-tag:hover {
+  -webkit-box-shadow: 0px 0px 61.88px 10.12px rgba(204, 204, 223, 0.71);
+          box-shadow: 0px 0px 61.88px 10.12px rgba(204, 204, 223, 0.71);
+  cursor: pointer;
+}
+.price-tag span {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin: 2rem auto 1rem;
+}
+.price-tag h4 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #4f4f6f;
+}
+.price-tag h4 sub {
+  font-size: 1.4rem;
+}
+.price-tag h4 sup {
+  vertical-align: super;
+  font-size: 1.4rem;
+}
+
+.price-btn {
+  color: #9fa4af;
+  background-color: #fff;
+  border: #9fa4af 1px solid;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 1rem 4rem;
+  border-radius: 100px;
+  font-weight: 300;
+  margin: 2rem auto;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.price-btn:hover {
+  background-color: #6e45e2;
+  color: #fff;
+}
